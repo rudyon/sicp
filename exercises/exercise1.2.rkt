@@ -1,3 +1,3 @@
 #lang sicp
-(/ (+ 5 4 (- 2 3 (+ 6 (/ 4 5))))
+(/ (+ 5 4 (- 2 (- 3 (+ 6 (/ 4 5)))) ; this was wrong on the previous version
    (* 3 (- 6 2) (- 2 7)))
