@@ -6,7 +6,7 @@
     0
     y))
 
-; applicative order
+; normal order
 ; (test 0 (p))
 ; (if (= 0 0)
 ;   0
@@ -16,11 +16,11 @@
 ;   (p))
 ; this will go on endlessly
 
-; normal order
+; applciative order
 ; (test 0 (p))
 ; (if (= 0 0)
 ;   0
 ;   (p))
 ; this will output "0"
 
-(test 0 (p)) ; this will loop so racket uses applicative order
+(test 0 (p)) ; this will loop because of normal order
