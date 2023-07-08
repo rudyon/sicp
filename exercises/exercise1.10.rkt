@@ -1,4 +1,5 @@
 #lang sicp
+
 (define (A x y)
   (cond ((= y 0) 0)
 	((= x 0) (* 2 y))
@@ -14,10 +15,3 @@
 (define (g n) (A 1 n))   ; 2^n except when n = 0 then 0
 (define (h n) (A 2 n))   ; this grows really fast. i am not doing this one. for several reasons
 (define (k n) (* 5 n n)) ; 5n^2 this answer is given by the book
-
-(define (gaze proc x n)  ; i used this for testing
-  (display (proc n))
-  (display "\n")
-  (if (> n x)
-      (display "done\n")
-      (gaze proc x (+ 1 n))))

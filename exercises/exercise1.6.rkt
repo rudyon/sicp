@@ -1,5 +1,5 @@
 #lang sicp
-(define (new-if predicate			; something is wrong with this
+(define (new-if predicate	; something is wrong with this
 		then-clause
 		else-clause)
   (cond (predicate then-clause)
@@ -19,10 +19,10 @@
 	    (sqrt-iter (improve guess x) x)))
     (sqrt-iter 1.0 x))
 
-(sq-rt 9)					; why does this loop?
-						; i figure it out i think...
-						; because it keeps expanding forever
-						; so the built in if uses normal order
-						; while procs that are not primitives
-						; use applicative order
-						; which causes this to keep indenting
+;(sq-rt 9)					; why does this loop?
+							; i figure it out i think...
+							; because it keeps expanding forever
+							; so the built in if uses normal order
+							; while procs that are not primitives
+							; use applicative order
+							; which causes this to keep indenting

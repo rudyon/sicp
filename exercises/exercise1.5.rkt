@@ -23,4 +23,4 @@
 ;   (p))
 ; this will output "0"
 
-(test 0 (p)) ; this will loop because of normal order
+;(test 0 (p)) ; this will loop because of normal order
